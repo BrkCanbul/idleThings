@@ -93,10 +93,7 @@ void printlist(node *list){
     i++;
   }
 }
-
-//© burak canbul
-//homework 210229006
-size_t getlength(node* list){//lenghtList();
+size_t getlength(node* list){
   size_t i =0;
   while(list !=NULL){
     i++;
@@ -104,7 +101,7 @@ size_t getlength(node* list){//lenghtList();
   }
   return i;
 }
-void printReverse(node* list){//revPrintList();
+void printReverse(node* list){
   size_t length = getlength(list);
   node *val =list;
   for(int j = 0;j<length;j++){
@@ -115,7 +112,7 @@ void printReverse(node* list){//revPrintList();
     val =list;
   }
 }
-void deleteAllNodes(node*list){ //deleteAllNodes();
+void deleteAllNodes(node*list){ 
   size_t length = getlength(list);
   for(int i = 0 ;i<length;i++){
     free(list);
